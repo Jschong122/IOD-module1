@@ -1,0 +1,58 @@
+!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Module 1 Exercise 3</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        min-height: 100vh;
+        align-items: stretch;
+      }
+      .column {
+        background: goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        .button{
+          border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column" id="column1">
+        <h1 id="heading1">Hello</h1>
+        <button onclick="button1()">Change me</button>
+      </div>
+
+      <div class="column" id="column2">
+        <h1 id="heading2">World</h1>
+        <button onclick="button2()">Change me</button>
+      </div>
+
+      <script>
+        function button1(){
+          const textElement =
+        document.getElementById("heading1");
+        textElement.style.color = "green";}
+
+        function button2(){
+          const textElement =
+          document.getElementById("heading2");
+          textElement.style.color = "red";}
+      </script>
+    </div>
+  </body>
+</html>
